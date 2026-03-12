@@ -24,12 +24,12 @@ The project includes a responsive web interface for regular users and a JWT-secu
 ## Installation & Setup
 
 1. Clone the repository:
-
+```bash
     git clone https://github.com/your-username/weather-reminder.git
     cd weather-reminder
-
+```
 2. Create a .env file in the root directory and configure your environment variables:
-
+```bash
     SECRET_KEY=your_secret_key
     DEBUG=True
     
@@ -43,19 +43,19 @@ The project includes a responsive web interface for regular users and a JWT-secu
     EMAIL_PORT=587
     EMAIL_HOST_USER=your_email@example.com
     EMAIL_HOST_PASSWORD=your_email_password
-
+```
 3. Build and run the Docker containers:
-
+```bash
     docker-compose up --build
-
+```
 4. Apply database migrations:
-
+```bash
     docker-compose exec web python manage.py migrate
-
+```
 5. Create a superuser to access the admin panel:
-
+```
     docker-compose exec web python manage.py createsuperuser
-
+```
 The web application should now be accessible at http://127.0.0.1:8000/.
 
 
