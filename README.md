@@ -28,21 +28,9 @@ The project includes a responsive web interface for regular users and a JWT-secu
     git clone https://github.com/your-username/weather-reminder.git
     cd weather-reminder
 ```
-2. Create a .env file in the root directory and configure your environment variables:
+2. Create a .env file in the root directory
 ```bash
-    SECRET_KEY=your_secret_key
-    DEBUG=True
-    
-    POSTGRES_DB=weather_db
-    POSTGRES_USER=postgres
-    POSTGRES_PASSWORD=yourpassword
-    DB_HOST=db
-    DB_PORT=5432
-    
-    EMAIL_HOST=smtp.example.com
-    EMAIL_PORT=587
-    EMAIL_HOST_USER=your_email@example.com
-    EMAIL_HOST_PASSWORD=your_email_password
+cp .env.example .env
 ```
 3. Build and run the Docker containers:
 ```bash
